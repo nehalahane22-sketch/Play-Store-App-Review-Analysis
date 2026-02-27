@@ -1,11 +1,14 @@
 GOOGLE PLAY STORE APP REVIEW ANALYSIS
 
-Data-Driven Insights from App Metadata & User Sentiment
+Data-Driven Insights from App Metadata & User Sentiment  
+
 🔎 PROJECT OVERVIEW
 
 This project presents a comprehensive Exploratory Data Analysis (EDA) of Google Play Store applications combined with user review sentiment analysis. The objective is to uncover patterns in app performance, ratings, installs, pricing strategies, and user feedback trends.
 
 The analysis integrates structured app metadata with unstructured review sentiment data to derive actionable business insights that can support product strategy, monetization optimization, and user engagement improvement.
+
+
 
 🎯 PROBLEM STATEMENT
 
@@ -23,6 +26,8 @@ How does user sentiment align with ratings?
 
 Which app categories dominate the marketplace?
 
+
+
 📊 DATASET DESCRIPTION
 
 The analysis is based on two datasets:
@@ -37,6 +42,8 @@ This dataset includes user review text along with sentiment classification, sent
 
 Both datasets were cleaned, processed, and merged to generate consolidated analytical insights.
 
+
+
 🧹 DATA PREPROCESSING
 
 Before performing analysis, extensive data cleaning and transformation steps were applied.
@@ -44,6 +51,8 @@ Before performing analysis, extensive data cleaning and transformation steps wer
 Text-based numeric fields such as installs and price were cleaned and converted into numerical formats. Missing values in rating and review-related columns were handled appropriately. Duplicate applications were removed to ensure accuracy. Date fields were converted into proper datetime format to enable time-based analysis.
 
 The datasets were then merged using the app name as the key identifier, enabling combined metadata and sentiment evaluation.
+
+
 
 📈 EXPLORATORY DATA ANALYSIS
 
@@ -55,6 +64,8 @@ A detailed pricing analysis was conducted to compare performance between free an
 
 User sentiment analysis provided deeper insight into customer perception by evaluating polarity and sentiment distribution across different app categories.
 
+
+
 🔍 KEY INSIGHTS
 
 The analysis revealed that free applications dominate the platform in terms of total installs, while paid applications represent a smaller but more niche market segment.
@@ -65,6 +76,8 @@ Sentiment polarity aligns closely with rating trends, validating the importance 
 
 Certain categories consistently achieve higher ratings and stronger user sentiment, suggesting targeted investment opportunities for developers.
 
+
+
 💡 BUSINESS RECOMMENDATIONS
 
 Developers should focus on improving review management strategies to maintain higher ratings and user trust.
@@ -74,6 +87,8 @@ Pricing strategy should be optimized based on category competition and user dema
 Sentiment monitoring can serve as an early detection mechanism for performance issues.
 
 High-growth categories identified through install and rating trends represent strong expansion opportunities.
+
+
 
 🛠 TECHNOLOGY STACK
 
