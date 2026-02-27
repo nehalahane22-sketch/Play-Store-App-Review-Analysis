@@ -1,161 +1,81 @@
-# Play-Store-App-Review-Analysis
-📱 Google Play Store App Analysis & User Review Insights
-📌 Project Overview
+GOOGLE PLAY STORE APP REVIEW ANALYSIS
+Data-Driven Insights from App Metadata & User Sentiment
+🔎 PROJECT OVERVIEW
 
-This project performs comprehensive Exploratory Data Analysis (EDA) on Google Play Store applications and user reviews to uncover trends in app performance, user engagement, ratings, pricing models, and sentiment patterns.
+This project presents a comprehensive Exploratory Data Analysis (EDA) of Google Play Store applications combined with user review sentiment analysis. The objective is to uncover patterns in app performance, ratings, installs, pricing strategies, and user feedback trends.
 
-The analysis combines app-level data with user review data to generate business insights that can help improve app strategy, monetization, and user satisfaction.
+The analysis integrates structured app metadata with unstructured review sentiment data to derive actionable business insights that can support product strategy, monetization optimization, and user engagement improvement.
 
-🎯 Business Objectives
+🎯 PROBLEM STATEMENT
 
-Analyze app categories and distribution patterns
+The mobile application ecosystem is highly competitive. Understanding what drives higher ratings, more installs, and positive user sentiment is critical for app developers and business stakeholders.
 
-Identify factors influencing app ratings
+This project aims to answer:
 
-Study relationship between installs, price, and ratings
+What factors influence app ratings?
 
-Examine free vs paid app performance
+How do installs and reviews correlate?
 
-Analyze user sentiment trends from reviews
+Do paid apps perform better than free apps?
 
-Provide data-driven recommendations for app growth and optimization
+How does user sentiment align with ratings?
 
-📂 Dataset Description
-1️⃣ Play Store Data
+Which app categories dominate the marketplace?
 
-Contains metadata about applications including:
+📊 DATASET DESCRIPTION
 
-App Name
+The analysis is based on two datasets:
 
-Category
+Play Store Application Data
 
-Rating
+This dataset contains detailed metadata about applications including category, rating, number of reviews, number of installs, pricing, content rating, and last update information.
 
-Reviews
+User Review Data
 
-Installs
+This dataset includes user review text along with sentiment classification, sentiment polarity, and subjectivity scores.
 
-Type (Free/Paid)
+Both datasets were cleaned, processed, and merged to generate consolidated analytical insights.
 
-Price
+🧹 DATA PREPROCESSING
 
-Content Rating
+Before performing analysis, extensive data cleaning and transformation steps were applied.
 
-Genres
+Text-based numeric fields such as installs and price were cleaned and converted into numerical formats. Missing values in rating and review-related columns were handled appropriately. Duplicate applications were removed to ensure accuracy. Date fields were converted into proper datetime format to enable time-based analysis.
 
-Last Updated
+The datasets were then merged using the app name as the key identifier, enabling combined metadata and sentiment evaluation.
 
-Android Version
+📈 EXPLORATORY DATA ANALYSIS
 
-2️⃣ User Reviews Data
+The exploratory phase focused on identifying structural patterns in the dataset.
 
-Contains:
+App category distribution was analyzed to determine dominant segments in the marketplace. Rating trends were evaluated to understand how user feedback varies across categories. Install patterns were studied to assess popularity distribution among applications.
 
-App Name
+A detailed pricing analysis was conducted to compare performance between free and paid applications. The relationship between reviews, installs, and ratings was examined using correlation analysis.
 
-User Review
+User sentiment analysis provided deeper insight into customer perception by evaluating polarity and sentiment distribution across different app categories.
 
-Sentiment (Positive / Negative / Neutral)
+🔍 KEY INSIGHTS
 
-Sentiment Polarity
+The analysis revealed that free applications dominate the platform in terms of total installs, while paid applications represent a smaller but more niche market segment.
 
-Sentiment Subjectivity
+There is a strong relationship between the number of reviews and installs, indicating that higher user engagement contributes to increased visibility.
 
-🧹 Data Cleaning & Preprocessing
+Sentiment polarity aligns closely with rating trends, validating the importance of qualitative feedback in influencing app reputation.
 
-The following preprocessing steps were performed:
+Certain categories consistently achieve higher ratings and stronger user sentiment, suggesting targeted investment opportunities for developers.
 
-Removed duplicate applications
+💡 BUSINESS RECOMMENDATIONS
 
-Handled missing values in rating and review fields
+Developers should focus on improving review management strategies to maintain higher ratings and user trust.
 
-Cleaned special characters from Installs column
+Pricing strategy should be optimized based on category competition and user demand patterns.
 
-Converted Price and Reviews columns into numeric format
+Sentiment monitoring can serve as an early detection mechanism for performance issues.
 
-Standardized categorical variables
+High-growth categories identified through install and rating trends represent strong expansion opportunities.
 
-Merged Play Store data with User Reviews dataset
+🛠 TECHNOLOGY STACK
 
-Converted date fields into datetime format
+Python was used as the primary programming language for the analysis.
 
-📊 Exploratory Data Analysis
-1️⃣ App Distribution Analysis
-
-Most popular app categories
-
-Category-wise rating distribution
-
-Content rating breakdown
-
-2️⃣ Ratings & Install Analysis
-
-Relationship between number of installs and ratings
-
-Impact of reviews on app ratings
-
-High-install vs high-rating comparison
-
-3️⃣ Pricing Analysis
-
-Free vs Paid app distribution
-
-Price range impact on ratings
-
-Revenue opportunity patterns
-
-4️⃣ Sentiment Analysis
-
-Distribution of Positive, Negative, and Neutral reviews
-
-Sentiment polarity trends
-
-App categories with highest positive sentiment
-
-5️⃣ Correlation Analysis
-
-Correlation between:
-
-Reviews & Installs
-
-Rating & Reviews
-
-Price & Rating
-
-🔍 Key Insights
-
-📈 Free apps dominate the marketplace in terms of installs
-
-⭐ Apps with higher review counts tend to maintain stable ratings
-
-💰 Paid apps are fewer but may have niche loyal user bases
-
-🧠 Sentiment analysis reveals strong alignment between polarity score and rating
-
-📊 Certain categories consistently receive higher engagement
-
-💡 Business Recommendations
-
-Focus on user review management to improve ratings
-
-Encourage feedback from high-install user base
-
-Optimize pricing strategy based on category competition
-
-Use sentiment analysis for early issue detection
-
-Invest in high-growth categories for better ROI
-
-🛠 Tech Stack
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Jupyter Notebook
+Data manipulation and transformation were performed using Pandas and NumPy. Visualization and pattern analysis were conducted using Matplotlib and Seaborn within a Jupyter Notebook environment.
